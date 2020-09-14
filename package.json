@@ -1,0 +1,22 @@
+{
+  "name": "pocket-sized-facade.js",
+  "description": "A functional, pocket sized version of Facade.js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "keywords": [
+    "canvas"
+  ],
+  "authors": [
+    {
+      "name": "Scott Doxey",
+      "email": "hello@scottdoxey.com",
+      "homepage": "http://scottdoxey.com/"
+    }
+  ],
+  "homepage": "https://github.com/neogeek/pocket-sized-facade.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/neogeek/pocket-sized-facade.js.git"
+  }
+}
