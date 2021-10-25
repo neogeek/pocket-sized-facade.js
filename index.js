@@ -3,7 +3,7 @@ const defaultContextOptions = {
     strokeStyle: 'transparent'
 };
 
-const setContextOptions = (context, options = {}) => {
+export const setContextOptions = (context, options = {}) => {
     const mergedOptions = { ...defaultContextOptions, ...options };
     for (const key in mergedOptions) {
         if (Array.isArray(mergedOptions[key])) {
@@ -14,7 +14,7 @@ const setContextOptions = (context, options = {}) => {
     }
 };
 
-const renderWithContextOptions = (
+export const renderWithContextOptions = (
     context,
     options = {},
     callback = () => {}
