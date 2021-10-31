@@ -73,7 +73,6 @@ export const drawLine = (
 
 export const drawPolygon = (context, points = [], options = {}) =>
     renderWithContextOptions(context, options, () => {
-        console.log(points);
         context.beginPath();
         points.map(([x, y]) => context.lineTo(x, y));
         context.closePath();
