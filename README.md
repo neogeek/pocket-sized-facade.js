@@ -96,7 +96,7 @@ drawLine(context, 0, 0, 10, 10, 200, 10, {
 });
 ```
 
-### `drawPolygon(context, points, options)`
+### `drawPolygon(context, x, y, points, options)`
 
 ```javascript
 import { drawPolygon } from 'https://unpkg.com/pocket-sized-facade.js@1.0.0/index.js';
@@ -106,6 +106,8 @@ const context = canvas.getContext('2d');
 
 drawPolygon(
     context,
+    0,
+    0,
     [
         [10, 10],
         [100, 10],
