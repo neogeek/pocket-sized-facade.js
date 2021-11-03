@@ -47,7 +47,7 @@ drawCircle(context, 250, 250, 25, {
 });
 ```
 
-### `drawImage(context, image, x, y, width, height, options)`
+### `drawImage(context, x, y, image, width, height, options)`
 
 ```javascript
 import { drawImage } from 'https://unpkg.com/pocket-sized-facade.js@1.0.0/index.js';
@@ -63,7 +63,7 @@ image.setAttribute(
 );
 
 const draw = () => {
-    drawImage(context, image, 250, 250);
+    drawImage(context, 250, 250, image);
 
     requestAnimationFrame(draw);
 };

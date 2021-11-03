@@ -42,9 +42,9 @@ export const drawCircle = (context, x = 0, y = 0, radius = 1, options = {}) =>
 
 export const drawImage = (
     context,
-    image,
     x = 0,
     y = 0,
+    image,
     width = image.naturalWidth,
     height = image.naturalHeight,
     options = {}
