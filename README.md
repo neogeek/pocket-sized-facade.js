@@ -71,7 +71,7 @@ const draw = () => {
 requestAnimationFrame(draw);
 ```
 
-### `drawLine(context, x1, y1, x2, y2, options)`
+### `drawLine(context, x, y, x1, y1, x2, y2, options)`
 
 ```javascript
 import { drawLine } from 'https://unpkg.com/pocket-sized-facade.js@1.0.0/index.js';
@@ -79,7 +79,7 @@ import { drawLine } from 'https://unpkg.com/pocket-sized-facade.js@1.0.0/index.j
 const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
 
-drawLine(context, 10, 10, 200, 10, {
+drawLine(context, 0, 0, 10, 10, 200, 10, {
     lineWidth: 10,
     strokeStyle: '#f00'
 });

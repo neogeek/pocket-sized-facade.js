@@ -57,6 +57,8 @@ export const drawImage = (
 
 export const drawLine = (
     context,
+    x = 0,
+    y = 0,
     x1 = 0,
     y1 = 0,
     x2 = 0,
@@ -64,6 +66,7 @@ export const drawLine = (
     options = {}
 ) =>
     renderWithContextOptions(context, options, () => {
+        context.translate(x, y);
         context.beginPath();
         context.moveTo(x1, y1);
         context.lineTo(x2, y2);
