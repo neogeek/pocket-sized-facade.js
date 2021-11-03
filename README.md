@@ -96,7 +96,7 @@ drawLine(context, 0, 0, 10, 10, 200, 10, {
 });
 ```
 
-### `drawPolygon(context, x, y, points, options)`
+### `drawPolygon(context, x, y, points, closed, options)`
 
 ```javascript
 import { drawPolygon } from 'https://unpkg.com/pocket-sized-facade.js@1.0.0/index.js';
@@ -114,6 +114,7 @@ drawPolygon(
         [100, 100],
         [10, 100]
     ],
+    true,
     {
         lineWidth: 10,
         strokeStyle: '#f00'

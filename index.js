@@ -84,12 +84,21 @@ export const drawLine = (
         context.stroke();
     });
 
-export const drawPolygon = (context, x = 0, y = 0, points = [], options = {}) =>
+export const drawPolygon = (
+    context,
+    x = 0,
+    y = 0,
+    points = [],
+    closed = true,
+    options = {}
+) =>
     renderWithContextOptions(context, options, () => {
         context.translate(x, y);
         context.beginPath();
         points.map(([x, y]) => context.lineTo(x, y));
-        context.closePath();
+        if (closed) {
+            context.closePath();
+        }
         context.fill();
         context.stroke();
     });
