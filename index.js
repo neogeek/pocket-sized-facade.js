@@ -95,7 +95,15 @@ export const drawPolygon = (
     renderWithContextOptions(context, options, () => {
         context.translate(x, y);
         context.beginPath();
-        points.map(([x, y]) => context.lineTo(x, y));
+        points.map(point => {
+            if (point.length === 6) {
+                context.bezierCurveTo.apply(context, point);
+            } else if (point.length === 5) {
+                context.arc.apply(context, point);
+            } else if (point.length === 2) {
+                context.lineTo.apply(context, point);
+            }
+        });
         if (closed) {
             context.closePath();
         }
