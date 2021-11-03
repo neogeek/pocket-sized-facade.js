@@ -96,7 +96,7 @@ export const drawRect = (
         context.strokeRect(x, y, width, height);
     });
 
-export const drawText = (context, text, x = 0, y = 0, options = {}) =>
+export const drawText = (context, x = 0, y = 0, text = '', options = {}) =>
     renderWithContextOptions(context, options, () => {
         context.fillText(text, x, y);
         context.strokeText(text, x, y);

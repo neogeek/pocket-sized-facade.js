@@ -122,7 +122,7 @@ drawRect(context, 10, 10, 100, 100, {
 });
 ```
 
-### `drawText(context, text, x, y, options)`
+### `drawText(context, x, y, text, options)`
 
 ```javascript
 import { drawText } from 'https://unpkg.com/pocket-sized-facade.js@1.0.0/index.js';
@@ -130,7 +130,7 @@ import { drawText } from 'https://unpkg.com/pocket-sized-facade.js@1.0.0/index.j
 const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
 
-drawText(context, 'Hello, world!', 20, 60, {
+drawText(context, 20, 60, 'Hello, world!', {
     fillStyle: '#000',
     font: 'italic 50px Courier New'
 });
