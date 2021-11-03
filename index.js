@@ -31,7 +31,7 @@ export const renderWithContextOptions = (
 export const clearCanvas = context =>
     context.clearRect(0, 0, context.canvas.width, context.canvas.height);
 
-export const drawCircle = (context, radius = 1, x = 0, y = 0, options = {}) =>
+export const drawCircle = (context, x = 0, y = 0, radius = 1, options = {}) =>
     renderWithContextOptions(context, options, () => {
         context.beginPath();
         context.arc(x, y, radius, 0, 2 * Math.PI, false);

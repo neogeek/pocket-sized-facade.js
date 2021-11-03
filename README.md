@@ -34,7 +34,7 @@ const context = canvas.getContext('2d');
 clearCanvas(context);
 ```
 
-### `drawCircle(context, radius, x, y, options)`
+### `drawCircle(context, x, y, radius, options)`
 
 ```javascript
 import { drawCircle } from 'https://unpkg.com/pocket-sized-facade.js@1.0.0/index.js';
@@ -42,7 +42,7 @@ import { drawCircle } from 'https://unpkg.com/pocket-sized-facade.js@1.0.0/index
 const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
 
-drawCircle(context, 10, 250, 250, {
+drawCircle(context, 250, 250, 25, {
     fillStyle: '#f00'
 });
 ```
