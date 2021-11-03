@@ -23,6 +23,17 @@ $ npm install pocket-sized-facade.js
 
 ## API
 
+### `resizeForHDPI(context, ratio)`
+
+```javascript
+import { resizeForHDPI } from 'https://unpkg.com/pocket-sized-facade.js@1.0.0/index.js';
+
+const canvas = document.querySelector('canvas');
+const context = canvas.getContext('2d');
+
+resizeForHDPI(context, 2);
+```
+
 ### `clearCanvas(context)`
 
 ```javascript

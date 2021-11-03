@@ -28,6 +28,16 @@ export const renderWithContextOptions = (
     context.restore();
 };
 
+export const resizeForHDPI = (context, ratio = 2) => {
+    context.canvas.style.width = `${context.canvas.width}px`;
+    context.canvas.style.height = `${context.canvas.height}px`;
+
+    context.canvas.setAttribute('width', context.canvas.width * ratio);
+    context.canvas.setAttribute('height', context.canvas.height * ratio);
+
+    context.scale(ratio, ratio);
+};
+
 export const clearCanvas = context =>
     context.clearRect(0, 0, context.canvas.width, context.canvas.height);
 
