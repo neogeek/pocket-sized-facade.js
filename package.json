@@ -1,7 +1,7 @@
 {
   "name": "pocket-sized-facade.js",
   "description": "A functional, pocket sized version of Facade.js",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": "index.js",
   "license": "MIT",
   "keywords": [
