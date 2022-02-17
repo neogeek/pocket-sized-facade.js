@@ -30,6 +30,7 @@ export const renderWithContextOptions = (
 
 /**
  * Resize a canvas for HDPI screens.
+ * @method
  * @param {object} context - The canvas context.
  * @param {integer} ratio - Ratio to scale the canvas.
  */
@@ -45,6 +46,7 @@ export const resizeForHDPI = (context, ratio = 2) => {
 
 /**
  * Clears a canvas.
+ * @method
  * @param {object} context - The canvas context.
  */
 export const clearCanvas = context =>
@@ -52,6 +54,7 @@ export const clearCanvas = context =>
 
 /**
  * Draws a circle to a canvas.
+ * @method
  * @param {object} context - The canvas context.
  * @param {integer} x - X coordinate to position the circle.
  * @param {integer} y - Y coordinate to position the circle.
@@ -69,6 +72,7 @@ export const drawCircle = (context, x = 0, y = 0, radius = 1, options = {}) =>
 
 /**
  * Draws an image to a canvas.
+ * @method
  * @param {object} context - The canvas context.
  * @param {integer} x - X coordinate to position the image.
  * @param {integer} y - Y coordinate to position the image.
@@ -92,6 +96,7 @@ export const drawImage = (
 
 /**
  * Draws a line to a canvas.
+ * @method
  * @param {object} context - The canvas context.
  * @param {integer} x - X coordinate to position the line.
  * @param {integer} y - Y coordinate to position the line.
@@ -122,6 +127,7 @@ export const drawLine = (
 
 /**
  * Draws a polygon to a canvas.
+ * @method
  * @param {object} context - The canvas context.
  * @param {integer} x - X coordinate to position the polygon.
  * @param {integer} y - Y coordinate to position the polygon.
@@ -158,6 +164,7 @@ export const drawPolygon = (
 
 /**
  * Draws a rectangle to a canvas.
+ * @method
  * @param {object} context - The canvas context.
  * @param {integer} x - X coordinate to position the rectangle.
  * @param {integer} y - Y coordinate to position the rectangle.
@@ -180,6 +187,7 @@ export const drawRect = (
 
 /**
  * Draws text to a canvas.
+ * @method
  * @param {object} context - The canvas context.
  * @param {integer} x - X coordinate to position the text.
  * @param {integer} y - Y coordinate to position the text.
