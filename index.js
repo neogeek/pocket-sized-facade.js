@@ -32,7 +32,7 @@ export const renderWithContextOptions = (
  * Resize a canvas for HDPI screens.
  * @method
  * @param {object} context - The canvas context.
- * @param {integer} ratio - Ratio to scale the canvas.
+ * @param {number} ratio - Ratio to scale the canvas.
  */
 export const resizeForHDPI = (context, ratio = 2) => {
     context.canvas.style.width = `${context.canvas.width}px`;
@@ -56,9 +56,9 @@ export const clearCanvas = context =>
  * Draws a circle to a canvas.
  * @method
  * @param {object} context - The canvas context.
- * @param {integer} x - X coordinate to position the circle.
- * @param {integer} y - Y coordinate to position the circle.
- * @param {integer} integer - The radius of the circle.
+ * @param {number} x - X coordinate to position the circle.
+ * @param {number} y - Y coordinate to position the circle.
+ * @param {number} radius - The radius of the circle.
  * @param {object} options - Optional context properties to apply when drawing a circle.
  */
 export const drawCircle = (context, x = 0, y = 0, radius = 1, options = {}) =>
@@ -74,8 +74,8 @@ export const drawCircle = (context, x = 0, y = 0, radius = 1, options = {}) =>
  * Draws an image to a canvas.
  * @method
  * @param {object} context - The canvas context.
- * @param {integer} x - X coordinate to position the image.
- * @param {integer} y - Y coordinate to position the image.
+ * @param {number} x - X coordinate to position the image.
+ * @param {number} y - Y coordinate to position the image.
  * @param {object} image - Reference to an HTML image element.
  * @param {object} options - Optional context properties to apply when drawing a image.
  */
@@ -98,12 +98,12 @@ export const drawImage = (
  * Draws a line to a canvas.
  * @method
  * @param {object} context - The canvas context.
- * @param {integer} x - X coordinate to position the line.
- * @param {integer} y - Y coordinate to position the line.
- * @param {integer} x1 - X coordinate where line starts.
- * @param {integer} y1 - Y coordinate where line starts.
- * @param {integer} x2 - X coordinate where line ends.
- * @param {integer} y2 - Y coordinate where line ends.
+ * @param {number} x - X coordinate to position the line.
+ * @param {number} y - Y coordinate to position the line.
+ * @param {number} x1 - X coordinate where line starts.
+ * @param {number} y1 - Y coordinate where line starts.
+ * @param {number} x2 - X coordinate where line ends.
+ * @param {number} y2 - Y coordinate where line ends.
  * @param {object} options - Optional context properties to apply when drawing a line.
  */
 export const drawLine = (
@@ -129,9 +129,9 @@ export const drawLine = (
  * Draws a polygon to a canvas.
  * @method
  * @param {object} context - The canvas context.
- * @param {integer} x - X coordinate to position the polygon.
- * @param {integer} y - Y coordinate to position the polygon.
- * @param {integer[][]} points - Multi-dimensional array of points used to render a polygon. Point arrays with 2 values is rendered as a line, 5 values is rendered as an arc and 6 values is rendered as a bezier curve.
+ * @param {number} x - X coordinate to position the polygon.
+ * @param {number} y - Y coordinate to position the polygon.
+ * @param {number[][]} points - Multi-dimensional array of points used to render a polygon. Point arrays with 2 values is rendered as a line, 5 values is rendered as an arc and 6 values is rendered as a bezier curve.
  * @param {boolean} closed - Boolean to determine if the polygon should be self closing or not.
  * @param {object} options - Optional context properties to apply when drawing a polygon.
  */
@@ -166,10 +166,10 @@ export const drawPolygon = (
  * Draws a rectangle to a canvas.
  * @method
  * @param {object} context - The canvas context.
- * @param {integer} x - X coordinate to position the rectangle.
- * @param {integer} y - Y coordinate to position the rectangle.
- * @param {integer} width - The width of the rectangle.
- * @param {integer} height - The height of the rectangle.
+ * @param {number} x - X coordinate to position the rectangle.
+ * @param {number} y - Y coordinate to position the rectangle.
+ * @param {number} width - The width of the rectangle.
+ * @param {number} height - The height of the rectangle.
  * @param {object} options - Optional context properties to apply when drawing a rectangle.
  */
 export const drawRect = (
@@ -189,8 +189,8 @@ export const drawRect = (
  * Draws text to a canvas.
  * @method
  * @param {object} context - The canvas context.
- * @param {integer} x - X coordinate to position the text.
- * @param {integer} y - Y coordinate to position the text.
+ * @param {number} x - X coordinate to position the text.
+ * @param {number} y - Y coordinate to position the text.
  * @param {string} text - Value of the text object.
  * @param {object} options - Optional context properties to apply when drawing text.
  */
