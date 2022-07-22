@@ -122,7 +122,7 @@ drawPolygon(
 );
 ```
 
-### `drawRect(context, x, y, width, height, options)`
+### `drawRect(context, x, y, width, height, radius, options)`
 
 ```javascript
 import { drawRect } from 'https://unpkg.com/pocket-sized-facade.js@2.0.0/index.js';
@@ -130,7 +130,7 @@ import { drawRect } from 'https://unpkg.com/pocket-sized-facade.js@2.0.0/index.j
 const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
 
-drawRect(context, 10, 10, 100, 100, {
+drawRect(context, 10, 10, 100, 100, 5, {
   lineWidth: 10,
   strokeStyle: '#f00',
 });
