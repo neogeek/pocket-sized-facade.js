@@ -14,10 +14,10 @@ $ npm install pocket-sized-facade.js
 ```html
 <script
   type="module"
-  src="https://unpkg.com/pocket-sized-facade.js@2.0.0/index.js"
+  src="https://unpkg.com/pocket-sized-facade.js/index.js"
 ></script>
 <script type="module">
-  import { clearCanvas } from 'https://unpkg.com/pocket-sized-facade.js@2.0.0/index.js';
+  import { clearCanvas } from 'https://unpkg.com/pocket-sized-facade.js/index.js';
 
   const canvas = document.querySelector('canvas');
   const context = canvas.getContext('2d');
@@ -29,7 +29,7 @@ $ npm install pocket-sized-facade.js
 ### `resizeForHDPI(context, ratio)`
 
 ```javascript
-import { resizeForHDPI } from 'https://unpkg.com/pocket-sized-facade.js@2.0.0/index.js';
+import { resizeForHDPI } from 'https://unpkg.com/pocket-sized-facade.js/index.js';
 
 const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
@@ -40,7 +40,7 @@ resizeForHDPI(context, 2);
 ### `clearCanvas(context)`
 
 ```javascript
-import { clearCanvas } from 'https://unpkg.com/pocket-sized-facade.js@2.0.0/index.js';
+import { clearCanvas } from 'https://unpkg.com/pocket-sized-facade.js/index.js';
 
 const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
@@ -51,7 +51,7 @@ clearCanvas(context);
 ### `drawCircle(context, x, y, radius, options)`
 
 ```javascript
-import { drawCircle } from 'https://unpkg.com/pocket-sized-facade.js@2.0.0/index.js';
+import { drawCircle } from 'https://unpkg.com/pocket-sized-facade.js/index.js';
 
 const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
@@ -66,7 +66,7 @@ drawCircle(context, 125, 125, 75, {
 ### `drawImage(context, x, y, image, width, height, options)`
 
 ```javascript
-import { drawImage } from 'https://unpkg.com/pocket-sized-facade.js@2.0.0/index.js';
+import { drawImage } from 'https://unpkg.com/pocket-sized-facade.js/index.js';
 
 const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
@@ -90,7 +90,7 @@ requestAnimationFrame(draw);
 ### `drawLine(context, x, y, x1, y1, x2, y2, options)`
 
 ```javascript
-import { drawLine } from 'https://unpkg.com/pocket-sized-facade.js@2.0.0/index.js';
+import { drawLine } from 'https://unpkg.com/pocket-sized-facade.js/index.js';
 
 const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
@@ -104,7 +104,7 @@ drawLine(context, 75, 125, 0, 0, 100, 0, {
 ### `drawPath(context, d, options)`
 
 ```javascript
-import { drawPath } from 'https://unpkg.com/pocket-sized-facade.js@2.0.0/index.js';
+import { drawPath } from 'https://unpkg.com/pocket-sized-facade.js/index.js';
 
 const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
@@ -122,7 +122,7 @@ drawPath(
 ### `drawPolygon(context, x, y, points, closed, options)`
 
 ```javascript
-import { drawPolygon } from 'https://unpkg.com/pocket-sized-facade.js@2.0.0/index.js';
+import { drawPolygon } from 'https://unpkg.com/pocket-sized-facade.js/index.js';
 
 const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
@@ -149,7 +149,7 @@ drawPolygon(
 ### `drawPolyline(context, points, closed, options)`
 
 ```javascript
-import { drawPolyline } from 'https://unpkg.com/pocket-sized-facade.js@2.0.0/index.js';
+import { drawPolyline } from 'https://unpkg.com/pocket-sized-facade.js/index.js';
 
 const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
@@ -164,7 +164,7 @@ drawPolyline(context, '100 75 175 75 175 175 75 175 75 100', false, {
 ### `drawRect(context, x, y, width, height, radius, options)`
 
 ```javascript
-import { drawRect } from 'https://unpkg.com/pocket-sized-facade.js@2.0.0/index.js';
+import { drawRect } from 'https://unpkg.com/pocket-sized-facade.js/index.js';
 
 const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
@@ -179,7 +179,7 @@ drawRect(context, 75, 75, 100, 100, 10, {
 ### `drawText(context, x, y, text, options)`
 
 ```javascript
-import { drawText } from 'https://unpkg.com/pocket-sized-facade.js@2.0.0/index.js';
+import { drawText } from 'https://unpkg.com/pocket-sized-facade.js/index.js';
 
 const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
