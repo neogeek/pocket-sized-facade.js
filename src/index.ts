@@ -155,6 +155,24 @@ export const drawLine = (
   });
 
 /**
+ * Draws a path from an SVG path tag to a canvas.
+ * @method
+ * @param {object} context - The canvas context.
+ * @param {string} d - Path definition from an SVG path tag.
+ * @param {object} options - Optional context properties to apply when drawing a image.
+ */
+export const drawPath = (
+  context: CanvasRenderingContext2D,
+  d: string = '',
+  options: ContextOptions = {}
+) =>
+  renderWithContextOptions(context, options, () => {
+    const path = new Path2D(d);
+    context.fill(path);
+    context.stroke(path);
+  });
+
+/**
  * Draws a polygon to a canvas.
  * @method
  * @param {object} context - The canvas context.
@@ -207,6 +225,32 @@ export const drawPolygon = (
     context.fill();
     context.stroke();
   });
+
+/**
+ * Draws a polygon from an SVG polyline tag to a canvas.
+ * @method
+ * @param {object} context - The canvas context.
+ * @param {string} points - Points from an SVG polyline tag.
+ * @param {object} options - Optional context properties to apply when drawing a image.
+ */
+export const drawPolyline = (
+  context: CanvasRenderingContext2D,
+  points: string = '',
+  options: ContextOptions = {}
+) => {
+  const pointsArray = points
+    .trim()
+    .split(' ')
+    .map(value => parseFloat(value));
+
+  const pointsMatrix: [x: number, y: number][] = [];
+
+  while (pointsArray.length >= 2) {
+    pointsMatrix.push(pointsArray.splice(0, 2) as [x: number, y: number]);
+  }
+
+  return drawPolygon(context, 0, 0, pointsMatrix, false, options);
+};
 
 /**
  * Draws a rectangle to a canvas.
