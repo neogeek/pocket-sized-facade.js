@@ -187,10 +187,10 @@ describe('pocket-size-facade.js', () => {
   });
 
   it('drawText', async () => {
+    registerFont('./test/mocks/CascadiaCode.ttf', { family: 'CascadiaCode' });
+
     const canvas = createCanvas(250, 250);
     const context = canvas.getContext('2d');
-
-    registerFont('./test/mocks/CascadiaCode.ttf', { family: 'CascadiaCode' });
 
     clearCanvas(context);
 
