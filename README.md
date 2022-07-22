@@ -10,14 +10,14 @@ $ npm install pocket-sized-facade.js
 
 ```html
 <script
-    type="module"
-    src="https://unpkg.com/pocket-sized-facade.js@2.0.0/index.js"
+  type="module"
+  src="https://unpkg.com/pocket-sized-facade.js@2.0.0/index.js"
 ></script>
 <script type="module">
-    import { clearCanvas } from 'https://unpkg.com/pocket-sized-facade.js@2.0.0/index.js';
+  import { clearCanvas } from 'https://unpkg.com/pocket-sized-facade.js@2.0.0/index.js';
 
-    const canvas = document.querySelector('canvas');
-    const context = canvas.getContext('2d');
+  const canvas = document.querySelector('canvas');
+  const context = canvas.getContext('2d');
 </script>
 ```
 
@@ -54,7 +54,7 @@ const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
 
 drawCircle(context, 250, 250, 25, {
-    fillStyle: '#f00'
+  fillStyle: '#f00',
 });
 ```
 
@@ -69,14 +69,14 @@ const context = canvas.getContext('2d');
 const image = document.createElement('img');
 
 image.setAttribute(
-    'src',
-    'https://duckduckgo.com/assets/logo_homepage.normal.v108.svg'
+  'src',
+  'https://duckduckgo.com/assets/logo_homepage.normal.v108.svg'
 );
 
 const draw = () => {
-    drawImage(context, 250, 250, image);
+  drawImage(context, 250, 250, image);
 
-    requestAnimationFrame(draw);
+  requestAnimationFrame(draw);
 };
 
 requestAnimationFrame(draw);
@@ -91,8 +91,8 @@ const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
 
 drawLine(context, 0, 0, 10, 10, 200, 10, {
-    lineWidth: 10,
-    strokeStyle: '#f00'
+  lineWidth: 10,
+  strokeStyle: '#f00',
 });
 ```
 
@@ -105,20 +105,20 @@ const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
 
 drawPolygon(
-    context,
-    0,
-    0,
-    [
-        [10, 10],
-        [100, 10],
-        [100, 100],
-        [10, 100]
-    ],
-    true,
-    {
-        lineWidth: 10,
-        strokeStyle: '#f00'
-    }
+  context,
+  0,
+  0,
+  [
+    [10, 10],
+    [100, 10],
+    [100, 100],
+    [10, 100],
+  ],
+  true,
+  {
+    lineWidth: 10,
+    strokeStyle: '#f00',
+  }
 );
 ```
 
@@ -131,8 +131,8 @@ const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
 
 drawRect(context, 10, 10, 100, 100, {
-    lineWidth: 10,
-    strokeStyle: '#f00'
+  lineWidth: 10,
+  strokeStyle: '#f00',
 });
 ```
 
@@ -145,7 +145,7 @@ const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
 
 drawText(context, 20, 60, 'Hello, world!', {
-    fillStyle: '#000',
-    font: 'italic 50px Courier New'
+  fillStyle: '#000',
+  font: 'italic 50px Courier New',
 });
 ```
