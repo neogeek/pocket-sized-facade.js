@@ -3,6 +3,7 @@
 > 💫 A functional, pocket sized version of Facade.js
 
 [![Tests](https://github.com/neogeek/pocket-sized-facade.js/actions/workflows/test.workflow.yml/badge.svg)](https://github.com/neogeek/pocket-sized-facade.js/actions/workflows/test.workflow.yml)
+[![NPM Version](http://img.shields.io/npm/v/pocket-sized-facade.js.svg?style=flat)](https://www.npmjs.org/package/pocket-sized-facade.js)
 
 ## Install
 
