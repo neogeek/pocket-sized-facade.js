@@ -216,6 +216,7 @@ export const drawPolygon = (
  * @param {number} y - Y coordinate to position the rectangle.
  * @param {number} width - The width of the rectangle.
  * @param {number} height - The height of the rectangle.
+ * @param {number} radius - The radius of the rectangle.
  * @param {object} options - Optional context properties to apply when drawing a rectangle.
  */
 export const drawRect = (
@@ -224,11 +225,20 @@ export const drawRect = (
   y: number = 0,
   width: number = 0,
   height: number = 0,
+  radius: number = 0,
   options: ContextOptions = {}
 ) =>
   renderWithContextOptions(context, options, () => {
-    context.fillRect(x, y, width, height);
-    context.strokeRect(x, y, width, height);
+    context.translate(x, y);
+    context.beginPath();
+    context.moveTo(radius, 0);
+    context.arcTo(width, 0, width, height, radius);
+    context.arcTo(width, height, 0, height, radius);
+    context.arcTo(0, height, 0, 0, radius);
+    context.arcTo(0, 0, width, 0, radius);
+    context.closePath();
+    context.fill();
+    context.stroke();
   });
 
 /**
