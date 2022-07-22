@@ -96,6 +96,24 @@ drawLine(context, 0, 0, 10, 10, 200, 10, {
 });
 ```
 
+### `drawPath(context, d, options)`
+
+```javascript
+import { drawPath } from 'https://unpkg.com/pocket-sized-facade.js@2.0.0/index.js';
+
+const canvas = document.querySelector('canvas');
+const context = canvas.getContext('2d');
+
+drawPath(
+  context,
+  'M128,88.0901699 L165.956504,115.667184 L151.45841,160.287731 L104.54159,160.287731 L90.0434961,115.667184 L128,88.0901699 Z',
+  {
+    lineWidth: 10,
+    strokeStyle: '#f00',
+  }
+);
+```
+
 ### `drawPolygon(context, x, y, points, closed, options)`
 
 ```javascript
@@ -120,6 +138,20 @@ drawPolygon(
     strokeStyle: '#f00',
   }
 );
+```
+
+### `drawPolyline(context, points, options)`
+
+```javascript
+import { drawPolyline } from 'https://unpkg.com/pocket-sized-facade.js@2.0.0/index.js';
+
+const canvas = document.querySelector('canvas');
+const context = canvas.getContext('2d');
+
+drawPolyline(context, '23 23 233 233 233 23 23 23 23 233 233 233', {
+  lineWidth: 10,
+  strokeStyle: '#f00',
+});
 ```
 
 ### `drawRect(context, x, y, width, height, radius, options)`
