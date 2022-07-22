@@ -2,11 +2,12 @@ import { toMatchImageSnapshot } from 'jest-image-snapshot';
 
 expect.extend({ toMatchImageSnapshot });
 
-import { createCanvas } from 'canvas';
+import { createCanvas, loadImage } from 'canvas';
 
 import {
   clearCanvas,
   drawCircle,
+  drawImage,
   drawLine,
   drawPolygon,
   drawPolyline,
@@ -29,6 +30,23 @@ describe('pocket-size-facade.js', () => {
       lineWidth: 10,
       strokeStyle: '#000070',
     });
+
+    expect(canvas.toBuffer()).toMatchImageSnapshot();
+  });
+
+  it('drawImage (svg)', async () => {
+    const canvas = createCanvas(250, 250);
+    const context = canvas.getContext('2d');
+
+    clearCanvas(context);
+
+    drawRect(context, 0, 0, canvas.width, canvas.height, 0, {
+      fillStyle: '#fff',
+    });
+
+    const image = await loadImage('./test/mocks/duckduckgo.svg');
+
+    drawImage(context, image as unknown as HTMLImageElement, 25, 40);
 
     expect(canvas.toBuffer()).toMatchImageSnapshot();
   });
