@@ -9,6 +9,7 @@ import {
   drawCircle,
   drawImage,
   drawLine,
+  drawPath,
   drawPolygon,
   drawPolyline,
   drawRect,
@@ -66,6 +67,28 @@ describe('pocket-size-facade.js', () => {
       lineWidth: 10,
       strokeStyle: '#000070',
     });
+
+    expect(canvas.toBuffer()).toMatchImageSnapshot();
+  });
+
+  it('drawPath', async () => {
+    const canvas = createCanvas(250, 250);
+    const context = canvas.getContext('2d');
+
+    clearCanvas(context);
+
+    drawRect(context, 0, 0, canvas.width, canvas.height, 0, {
+      fillStyle: '#fff',
+    });
+
+    drawPath(
+      context,
+      'M128,88.0901699 L165.956504,115.667184 L151.45841,160.287731 L104.54159,160.287731 L90.0434961,115.667184 L128,88.0901699 Z',
+      {
+        lineWidth: 10,
+        strokeStyle: '#000070',
+      }
+    );
 
     expect(canvas.toBuffer()).toMatchImageSnapshot();
   });
