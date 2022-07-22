@@ -81,8 +81,8 @@ describe('pocket-size-facade.js', () => {
 
     drawPolygon(
       context,
-      75,
-      75,
+      70,
+      70,
       [
         [10, 10],
         [100, 10],

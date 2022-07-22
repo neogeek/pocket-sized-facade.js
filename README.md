@@ -131,8 +131,8 @@ const context = canvas.getContext('2d');
 
 drawPolygon(
   context,
-  75,
-  75,
+  70,
+  70,
   [
     [10, 10],
     [100, 10],
