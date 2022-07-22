@@ -12,6 +12,7 @@ import {
   drawPolygon,
   drawPolyline,
   drawRect,
+  drawText,
 } from '../src/index.js';
 
 describe('pocket-size-facade.js', () => {
@@ -180,6 +181,29 @@ describe('pocket-size-facade.js', () => {
       fillStyle: '#F74E00',
       lineWidth: 10,
       strokeStyle: '#000070',
+    });
+
+    expect(canvas.toBuffer()).toMatchImageSnapshot();
+  });
+
+  it('drawText', async () => {
+    const canvas = createCanvas(250, 250);
+    const context = canvas.getContext('2d');
+
+    clearCanvas(context);
+
+    drawRect(context, 0, 0, canvas.width, canvas.height, 0, {
+      fillStyle: '#fff',
+    });
+
+    drawText(context, 20, 60, 'Hello, ', {
+      fillStyle: '#000',
+      font: 'italic 50px Courier New',
+    });
+
+    drawText(context, 20, 120, 'world!', {
+      fillStyle: '#000',
+      font: 'italic 50px Courier New',
     });
 
     expect(canvas.toBuffer()).toMatchImageSnapshot();
