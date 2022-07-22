@@ -2,7 +2,7 @@ import { toMatchImageSnapshot } from 'jest-image-snapshot';
 
 expect.extend({ toMatchImageSnapshot });
 
-import { createCanvas, loadImage } from 'canvas';
+import { createCanvas, loadImage, registerFont } from 'canvas';
 
 import {
   clearCanvas,
@@ -190,6 +190,8 @@ describe('pocket-size-facade.js', () => {
     const canvas = createCanvas(250, 250);
     const context = canvas.getContext('2d');
 
+    registerFont('./test/mocks/CascadiaCode.ttf', { family: 'CascadiaCode' });
+
     clearCanvas(context);
 
     drawRect(context, 0, 0, canvas.width, canvas.height, 0, {
@@ -198,12 +200,12 @@ describe('pocket-size-facade.js', () => {
 
     drawText(context, 20, 60, 'Hello, ', {
       fillStyle: '#000',
-      font: 'italic 50px Georgia',
+      font: 'italic 50px CascadiaCode',
     });
 
     drawText(context, 20, 120, 'world!', {
       fillStyle: '#000',
-      font: 'italic 50px Georgia',
+      font: 'italic 50px CascadiaCode',
     });
 
     expect(canvas.toBuffer()).toMatchImageSnapshot();
