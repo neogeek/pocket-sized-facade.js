@@ -2,6 +2,8 @@
 
 > 💫 A functional, pocket sized version of Facade.js
 
+[![Tests](https://github.com/neogeek/pocket-sized-facade.js/actions/workflows/test.workflow.yml/badge.svg)](https://github.com/neogeek/pocket-sized-facade.js/actions/workflows/test.workflow.yml)
+
 ## Install
 
 ```bash
