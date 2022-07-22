@@ -50,6 +50,8 @@ clearCanvas(context);
 
 ### `drawCircle(context, x, y, radius, options)`
 
+![](src/__image_snapshots__/index-test-ts-pocket-size-facade-js-draw-circle-1-snap.png)
+
 ```javascript
 import { drawCircle } from 'https://unpkg.com/pocket-sized-facade.js/index.js';
 
@@ -64,6 +66,8 @@ drawCircle(context, 125, 125, 75, {
 ```
 
 ### `drawImage(context, x, y, image, width, height, options)`
+
+![](src/__image_snapshots__/index-test-ts-pocket-size-facade-js-draw-image-svg-1-snap.png)
 
 ```javascript
 import { drawImage } from 'https://unpkg.com/pocket-sized-facade.js/index.js';
@@ -90,6 +94,8 @@ requestAnimationFrame(draw);
 ```
 
 ### `drawLine(context, x, y, x1, y1, x2, y2, options)`
+
+![](src/__image_snapshots__/index-test-ts-pocket-size-facade-js-draw-line-1-snap.png)
 
 ```javascript
 import { drawLine } from 'https://unpkg.com/pocket-sized-facade.js/index.js';
@@ -123,6 +129,8 @@ drawPath(
 
 ### `drawPolygon(context, x, y, points, closed, options)`
 
+![](src/__image_snapshots__/index-test-ts-pocket-size-facade-js-draw-polygon-1-snap.png)
+
 ```javascript
 import { drawPolygon } from 'https://unpkg.com/pocket-sized-facade.js/index.js';
 
@@ -150,6 +158,9 @@ drawPolygon(
 
 ### `drawPolyline(context, points, closed, options)`
 
+![](src/__image_snapshots__/index-test-ts-pocket-size-facade-js-draw-polyline-closed-1-snap.png)
+![](src/__image_snapshots__/index-test-ts-pocket-size-facade-js-draw-polyline-open-1-snap.png)
+
 ```javascript
 import { drawPolyline } from 'https://unpkg.com/pocket-sized-facade.js/index.js';
 
@@ -164,6 +175,8 @@ drawPolyline(context, '100 75 175 75 175 175 75 175 75 100', false, {
 ```
 
 ### `drawRect(context, x, y, width, height, radius, options)`
+
+![](src/__image_snapshots__/index-test-ts-pocket-size-facade-js-draw-rect-1-snap.png)
 
 ```javascript
 import { drawRect } from 'https://unpkg.com/pocket-sized-facade.js/index.js';
