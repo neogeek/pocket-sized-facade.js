@@ -198,12 +198,12 @@ describe('pocket-size-facade.js', () => {
 
     drawText(context, 20, 60, 'Hello, ', {
       fillStyle: '#000',
-      font: 'italic 50px Courier New',
+      font: 'italic 50px Georgia',
     });
 
     drawText(context, 20, 120, 'world!', {
       fillStyle: '#000',
-      font: 'italic 50px Courier New',
+      font: 'italic 50px Georgia',
     });
 
     expect(canvas.toBuffer()).toMatchImageSnapshot();
