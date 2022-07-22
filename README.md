@@ -79,7 +79,7 @@ image.setAttribute(
 );
 
 const draw = () => {
-  drawImage(context, 250, 250, image);
+  drawImage(context, image, 10, 10);
 
   requestAnimationFrame(draw);
 };
