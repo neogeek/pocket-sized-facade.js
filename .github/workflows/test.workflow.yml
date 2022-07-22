@@ -49,3 +49,10 @@ jobs:
       - name: Run tests
         timeout-minutes: 5
         run: npm test
+
+      - name: Upload diff snapshots
+        uses: actions/upload-artifact@v2
+        if: failure()
+        with:
+          name: test-artifact
+          path: /home/runner/work/pocket-sized-facade.js/pocket-sized-facade.js/src/__image_snapshots__/__diff_output__/
