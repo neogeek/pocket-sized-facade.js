@@ -231,11 +231,13 @@ export const drawPolygon = (
  * @method
  * @param {object} context - The canvas context.
  * @param {string} points - Points from an SVG polyline tag.
+ * @param {boolean} closed - Boolean to determine if the polyline should be self closing or not.
  * @param {object} options - Optional context properties to apply when drawing a image.
  */
 export const drawPolyline = (
   context: CanvasRenderingContext2D,
   points: string = '',
+  closed: boolean = true,
   options: ContextOptions = {}
 ) => {
   const pointsArray = points
@@ -249,7 +251,7 @@ export const drawPolyline = (
     pointsMatrix.push(pointsArray.splice(0, 2) as [x: number, y: number]);
   }
 
-  return drawPolygon(context, 0, 0, pointsMatrix, false, options);
+  return drawPolygon(context, 0, 0, pointsMatrix, closed, options);
 };
 
 /**

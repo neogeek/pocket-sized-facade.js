@@ -140,7 +140,7 @@ drawPolygon(
 );
 ```
 
-### `drawPolyline(context, points, options)`
+### `drawPolyline(context, points, closed, options)`
 
 ```javascript
 import { drawPolyline } from 'https://unpkg.com/pocket-sized-facade.js@2.0.0/index.js';
@@ -148,7 +148,7 @@ import { drawPolyline } from 'https://unpkg.com/pocket-sized-facade.js@2.0.0/ind
 const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
 
-drawPolyline(context, '23 23 233 233 233 23 23 23 23 233 233 233', {
+drawPolyline(context, '23 23 233 233 233 23 23 23 23 233 233 233', false, {
   lineWidth: 10,
   strokeStyle: '#f00',
 });
