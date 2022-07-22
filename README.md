@@ -53,8 +53,10 @@ import { drawCircle } from 'https://unpkg.com/pocket-sized-facade.js@2.0.0/index
 const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
 
-drawCircle(context, 250, 250, 25, {
-  fillStyle: '#f00',
+drawCircle(context, 125, 125, 75, {
+  fillStyle: '#F74E00',
+  lineWidth: 10,
+  strokeStyle: '#000070',
 });
 ```
 
@@ -90,9 +92,9 @@ import { drawLine } from 'https://unpkg.com/pocket-sized-facade.js@2.0.0/index.j
 const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
 
-drawLine(context, 0, 0, 10, 10, 200, 10, {
+drawLine(context, 75, 125, 0, 0, 100, 0, {
   lineWidth: 10,
-  strokeStyle: '#f00',
+  strokeStyle: '#000070',
 });
 ```
 
@@ -124,8 +126,8 @@ const context = canvas.getContext('2d');
 
 drawPolygon(
   context,
-  0,
-  0,
+  75,
+  75,
   [
     [10, 10],
     [100, 10],
@@ -134,8 +136,9 @@ drawPolygon(
   ],
   true,
   {
+    fillStyle: '#F74E00',
     lineWidth: 10,
-    strokeStyle: '#f00',
+    strokeStyle: '#000070',
   }
 );
 ```
@@ -148,9 +151,10 @@ import { drawPolyline } from 'https://unpkg.com/pocket-sized-facade.js@2.0.0/ind
 const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
 
-drawPolyline(context, '23 23 233 233 233 23 23 23 23 233 233 233', false, {
+drawPolyline(context, '100 75 175 75 175 175 75 175 75 100', false, {
+  fillStyle: '#F74E00',
   lineWidth: 10,
-  strokeStyle: '#f00',
+  strokeStyle: '#000070',
 });
 ```
 
@@ -162,9 +166,10 @@ import { drawRect } from 'https://unpkg.com/pocket-sized-facade.js@2.0.0/index.j
 const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
 
-drawRect(context, 10, 10, 100, 100, 5, {
+drawRect(context, 75, 75, 100, 100, 10, {
+  fillStyle: '#F74E00',
   lineWidth: 10,
-  strokeStyle: '#f00',
+  strokeStyle: '#000070',
 });
 ```
 
