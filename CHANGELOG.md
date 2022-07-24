@@ -4,6 +4,7 @@
 
 [Full Changelog](https://github.com/neogeek/pocket-sized-facade.js/compare/v2.0.0...HEAD)
 
+- [hotfix] Added drawPath test. [#7](https://github.com/neogeek/pocket-sized-facade.js/pull/7)
 - [hotfix] Added polygon arc test. [#9](https://github.com/neogeek/pocket-sized-facade.js/pull/9)
 - [feat] Added drawText test. [#8](https://github.com/neogeek/pocket-sized-facade.js/pull/8)
 - [hotfix] Added drawImage test. [#6](https://github.com/neogeek/pocket-sized-facade.js/pull/6)
