@@ -193,6 +193,8 @@ drawRect(context, 75, 75, 100, 100, 10, {
 
 ### `drawText(context, x, y, text, options)`
 
+![](src/__image_snapshots__/index-test-ts-pocket-size-facade-js-draw-text-1-snap.png)
+
 ```javascript
 import { drawText } from 'https://unpkg.com/pocket-sized-facade.js/index.js';
 
