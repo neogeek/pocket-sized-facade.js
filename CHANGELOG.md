@@ -1,9 +1,10 @@
 # Changelog
 
-## [HEAD](https://github.com/neogeek/pocket-sized-facade.js/tree/HEAD) - (2022-07-22)
+## [HEAD](https://github.com/neogeek/pocket-sized-facade.js/tree/HEAD) - (2022-07-24)
 
 [Full Changelog](https://github.com/neogeek/pocket-sized-facade.js/compare/v2.0.0...HEAD)
 
+- [feat] Added drawText test. [#8](https://github.com/neogeek/pocket-sized-facade.js/pull/8)
 - [hotfix] Added drawImage test. [#6](https://github.com/neogeek/pocket-sized-facade.js/pull/6)
 - [feat] Added tests. [#5](https://github.com/neogeek/pocket-sized-facade.js/pull/5)
 - [hotfix] Added missing closed attribute to drawPolyline. [#4](https://github.com/neogeek/pocket-sized-facade.js/pull/4)
