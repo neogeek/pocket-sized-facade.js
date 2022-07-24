@@ -129,6 +129,24 @@ describe('pocket-size-facade.js', () => {
     expect(canvas.toBuffer()).toMatchImageSnapshot();
   });
 
+  it('drawPolygon (arc)', async () => {
+    const canvas = createCanvas(250, 250);
+    const context = canvas.getContext('2d');
+
+    clearCanvas(context);
+
+    drawRect(context, 0, 0, canvas.width, canvas.height, 0, {
+      fillStyle: '#fff',
+    });
+
+    drawPolygon(context, 75, 100, [[50, 0, 50, 0, Math.PI]], false, {
+      lineWidth: 10,
+      strokeStyle: '#000070',
+    });
+
+    expect(canvas.toBuffer()).toMatchImageSnapshot();
+  });
+
   it('drawPolyline (open)', async () => {
     const canvas = createCanvas(250, 250);
     const context = canvas.getContext('2d');
