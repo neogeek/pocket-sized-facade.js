@@ -111,6 +111,8 @@ drawLine(context, 75, 125, 0, 0, 100, 0, {
 
 ### `drawPath(context, d, options)`
 
+![](src/__image_snapshots__/index-test-ts-pocket-size-facade-js-draw-path-1-snap.png)
+
 ```javascript
 import { drawPath } from 'https://unpkg.com/pocket-sized-facade.js/index.js';
 

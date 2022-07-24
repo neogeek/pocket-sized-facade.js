@@ -4,6 +4,8 @@ expect.extend({ toMatchImageSnapshot });
 
 import { createCanvas, loadImage, registerFont } from 'canvas';
 
+import 'canvas-5-polyfill';
+
 import {
   clearCanvas,
   drawCircle,
