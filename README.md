@@ -130,6 +130,8 @@ drawPath(
 ### `drawPolygon(context, x, y, points, closed, options)`
 
 ![](src/__image_snapshots__/index-test-ts-pocket-size-facade-js-draw-polygon-1-snap.png)
+![](src/__image_snapshots__/index-test-ts-pocket-size-facade-js-draw-polygon-bezier-1-snap.png)
+![](src/__image_snapshots__/index-test-ts-pocket-size-facade-js-draw-polygon-arc-1-snap.png)
 
 ```javascript
 import { drawPolygon } from 'https://unpkg.com/pocket-sized-facade.js/index.js';
