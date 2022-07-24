@@ -208,6 +208,9 @@ describe('pocket-size-facade.js', () => {
       font: 'italic 50px CascadiaCode',
     });
 
-    expect(canvas.toBuffer()).toMatchImageSnapshot();
+    expect(canvas.toBuffer()).toMatchImageSnapshot({
+      failureThreshold: 0.01,
+      failureThresholdType: 'percent',
+    });
   });
 });
