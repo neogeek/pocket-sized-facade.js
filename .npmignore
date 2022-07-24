@@ -1,0 +1,13 @@
+.github
+
+coverage
+
+src
+
+test
+
+.prettierrc
+
+CHANGELOG.md
+
+tsconfig.json
