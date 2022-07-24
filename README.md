@@ -12,12 +12,9 @@ $ npm install pocket-sized-facade.js
 ```
 
 ```html
-<script
-  type="module"
-  src="https://unpkg.com/pocket-sized-facade.js/index.js"
-></script>
+<script type="module" src="https://unpkg.com/pocket-sized-facade.js"></script>
 <script type="module">
-  import { clearCanvas } from 'https://unpkg.com/pocket-sized-facade.js/index.js';
+  import { clearCanvas } from 'https://unpkg.com/pocket-sized-facade.js';
 
   const canvas = document.querySelector('canvas');
   const context = canvas.getContext('2d');
@@ -29,7 +26,7 @@ $ npm install pocket-sized-facade.js
 ### `resizeForHDPI(context, ratio)`
 
 ```javascript
-import { resizeForHDPI } from 'https://unpkg.com/pocket-sized-facade.js/index.js';
+import { resizeForHDPI } from 'https://unpkg.com/pocket-sized-facade.js';
 
 const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
@@ -40,7 +37,7 @@ resizeForHDPI(context, 2);
 ### `clearCanvas(context)`
 
 ```javascript
-import { clearCanvas } from 'https://unpkg.com/pocket-sized-facade.js/index.js';
+import { clearCanvas } from 'https://unpkg.com/pocket-sized-facade.js';
 
 const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
@@ -53,7 +50,7 @@ clearCanvas(context);
 ![](src/__image_snapshots__/index-test-ts-pocket-size-facade-js-draw-circle-1-snap.png)
 
 ```javascript
-import { drawCircle } from 'https://unpkg.com/pocket-sized-facade.js/index.js';
+import { drawCircle } from 'https://unpkg.com/pocket-sized-facade.js';
 
 const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
@@ -70,7 +67,7 @@ drawCircle(context, 125, 125, 75, {
 ![](src/__image_snapshots__/index-test-ts-pocket-size-facade-js-draw-image-svg-1-snap.png)
 
 ```javascript
-import { drawImage } from 'https://unpkg.com/pocket-sized-facade.js/index.js';
+import { drawImage } from 'https://unpkg.com/pocket-sized-facade.js';
 
 const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
@@ -98,7 +95,7 @@ requestAnimationFrame(draw);
 ![](src/__image_snapshots__/index-test-ts-pocket-size-facade-js-draw-line-1-snap.png)
 
 ```javascript
-import { drawLine } from 'https://unpkg.com/pocket-sized-facade.js/index.js';
+import { drawLine } from 'https://unpkg.com/pocket-sized-facade.js';
 
 const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
@@ -114,7 +111,7 @@ drawLine(context, 75, 125, 0, 0, 100, 0, {
 ![](src/__image_snapshots__/index-test-ts-pocket-size-facade-js-draw-path-1-snap.png)
 
 ```javascript
-import { drawPath } from 'https://unpkg.com/pocket-sized-facade.js/index.js';
+import { drawPath } from 'https://unpkg.com/pocket-sized-facade.js';
 
 const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
@@ -136,7 +133,7 @@ drawPath(
 ![](src/__image_snapshots__/index-test-ts-pocket-size-facade-js-draw-polygon-arc-1-snap.png)
 
 ```javascript
-import { drawPolygon } from 'https://unpkg.com/pocket-sized-facade.js/index.js';
+import { drawPolygon } from 'https://unpkg.com/pocket-sized-facade.js';
 
 const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
@@ -166,7 +163,7 @@ drawPolygon(
 ![](src/__image_snapshots__/index-test-ts-pocket-size-facade-js-draw-polyline-open-1-snap.png)
 
 ```javascript
-import { drawPolyline } from 'https://unpkg.com/pocket-sized-facade.js/index.js';
+import { drawPolyline } from 'https://unpkg.com/pocket-sized-facade.js';
 
 const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
@@ -183,7 +180,7 @@ drawPolyline(context, '100 75 175 75 175 175 75 175 75 100', false, {
 ![](src/__image_snapshots__/index-test-ts-pocket-size-facade-js-draw-rect-1-snap.png)
 
 ```javascript
-import { drawRect } from 'https://unpkg.com/pocket-sized-facade.js/index.js';
+import { drawRect } from 'https://unpkg.com/pocket-sized-facade.js';
 
 const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
@@ -200,7 +197,7 @@ drawRect(context, 75, 75, 100, 100, 10, {
 ![](src/__image_snapshots__/index-test-ts-pocket-size-facade-js-draw-text-1-snap.png)
 
 ```javascript
-import { drawText } from 'https://unpkg.com/pocket-sized-facade.js/index.js';
+import { drawText } from 'https://unpkg.com/pocket-sized-facade.js';
 
 const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
