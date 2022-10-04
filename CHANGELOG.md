@@ -2,7 +2,13 @@
 
 ## [HEAD](https://github.com/neogeek/pocket-sized-facade.js/tree/HEAD) - (2022-07-24)
 
-[Full Changelog](https://github.com/neogeek/pocket-sized-facade.js/compare/v2.0.0...HEAD)
+[Full Changelog](https://github.com/neogeek/pocket-sized-facade.js/compare/v3.0.0...HEAD)
+
+- No merges found
+
+## [v3.0.0](https://github.com/neogeek/pocket-sized-facade.js/tree/v3.0.0) - (2022-07-24)
+
+[Full Changelog](https://github.com/neogeek/pocket-sized-facade.js/compare/v2.0.0...v3.0.0)
 
 - [hotfix] Added drawPath test. [#7](https://github.com/neogeek/pocket-sized-facade.js/pull/7)
 - [hotfix] Added polygon arc test. [#9](https://github.com/neogeek/pocket-sized-facade.js/pull/9)
