@@ -21,7 +21,9 @@ import {
 describe('pocket-size-facade.js', () => {
   it('drawCircle', async () => {
     const canvas = createCanvas(250, 250);
-    const context = canvas.getContext('2d');
+    const context = canvas.getContext(
+      '2d'
+    ) as unknown as CanvasRenderingContext2D;
 
     clearCanvas(context);
 
@@ -40,7 +42,9 @@ describe('pocket-size-facade.js', () => {
 
   it('drawImage (svg)', async () => {
     const canvas = createCanvas(250, 250);
-    const context = canvas.getContext('2d');
+    const context = canvas.getContext(
+      '2d'
+    ) as unknown as CanvasRenderingContext2D;
 
     clearCanvas(context);
 
@@ -57,7 +61,9 @@ describe('pocket-size-facade.js', () => {
 
   it('drawLine', async () => {
     const canvas = createCanvas(250, 250);
-    const context = canvas.getContext('2d');
+    const context = canvas.getContext(
+      '2d'
+    ) as unknown as CanvasRenderingContext2D;
 
     clearCanvas(context);
 
@@ -75,7 +81,9 @@ describe('pocket-size-facade.js', () => {
 
   it('drawPath', async () => {
     const canvas = createCanvas(250, 250);
-    const context = canvas.getContext('2d');
+    const context = canvas.getContext(
+      '2d'
+    ) as unknown as CanvasRenderingContext2D;
 
     clearCanvas(context);
 
@@ -97,7 +105,9 @@ describe('pocket-size-facade.js', () => {
 
   it('drawPolygon', async () => {
     const canvas = createCanvas(250, 250);
-    const context = canvas.getContext('2d');
+    const context = canvas.getContext(
+      '2d'
+    ) as unknown as CanvasRenderingContext2D;
 
     clearCanvas(context);
 
@@ -128,7 +138,9 @@ describe('pocket-size-facade.js', () => {
 
   it('drawPolygon (bezier)', async () => {
     const canvas = createCanvas(250, 250);
-    const context = canvas.getContext('2d');
+    const context = canvas.getContext(
+      '2d'
+    ) as unknown as CanvasRenderingContext2D;
 
     clearCanvas(context);
 
@@ -156,7 +168,9 @@ describe('pocket-size-facade.js', () => {
 
   it('drawPolygon (arc)', async () => {
     const canvas = createCanvas(250, 250);
-    const context = canvas.getContext('2d');
+    const context = canvas.getContext(
+      '2d'
+    ) as unknown as CanvasRenderingContext2D;
 
     clearCanvas(context);
 
@@ -174,7 +188,9 @@ describe('pocket-size-facade.js', () => {
 
   it('drawPolyline (open)', async () => {
     const canvas = createCanvas(250, 250);
-    const context = canvas.getContext('2d');
+    const context = canvas.getContext(
+      '2d'
+    ) as unknown as CanvasRenderingContext2D;
 
     clearCanvas(context);
 
@@ -193,7 +209,9 @@ describe('pocket-size-facade.js', () => {
 
   it('drawPolyline (closed)', async () => {
     const canvas = createCanvas(250, 250);
-    const context = canvas.getContext('2d');
+    const context = canvas.getContext(
+      '2d'
+    ) as unknown as CanvasRenderingContext2D;
 
     clearCanvas(context);
 
@@ -212,7 +230,9 @@ describe('pocket-size-facade.js', () => {
 
   it('drawRect', async () => {
     const canvas = createCanvas(250, 250);
-    const context = canvas.getContext('2d');
+    const context = canvas.getContext(
+      '2d'
+    ) as unknown as CanvasRenderingContext2D;
 
     clearCanvas(context);
 
@@ -233,7 +253,9 @@ describe('pocket-size-facade.js', () => {
     registerFont('./test/mocks/CascadiaCode.ttf', { family: 'CascadiaCode' });
 
     const canvas = createCanvas(250, 250);
-    const context = canvas.getContext('2d');
+    const context = canvas.getContext(
+      '2d'
+    ) as unknown as CanvasRenderingContext2D;
 
     clearCanvas(context);
 
