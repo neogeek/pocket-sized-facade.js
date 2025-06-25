@@ -9,6 +9,12 @@ const defaultContextOptions = {
   strokeStyle: 'transparent',
 } as ContextOptions;
 
+/**
+ * Set canvas context.
+ * @method
+ * @param {CanvasRenderingContext2D} context - The canvas context.
+ * @param {object} options - Canvas context options.
+ */
 export const setContextOptions = (
   context: CanvasRenderingContext2D,
   options: ContextOptions = {}
@@ -34,6 +40,13 @@ export const setContextOptions = (
   }
 };
 
+/**
+ * Render with canvas context.
+ * @method
+ * @param {CanvasRenderingContext2D} context - The canvas context.
+ * @param {object} options - Canvas context options.
+ * @param {() => void} callback - Render callback.
+ */
 export const renderWithContextOptions = (
   context: CanvasRenderingContext2D,
   options: ContextOptions = {},
@@ -51,7 +64,7 @@ export const renderWithContextOptions = (
 /**
  * Resize a canvas for HDPI screens.
  * @method
- * @param {object} context - The canvas context.
+ * @param {CanvasRenderingContext2D} context - The canvas context.
  * @param {number} ratio - Ratio to scale the canvas.
  */
 export const resizeForHDPI = (
@@ -70,7 +83,7 @@ export const resizeForHDPI = (
 /**
  * Clears a canvas.
  * @method
- * @param {object} context - The canvas context.
+ * @param {CanvasRenderingContext2D} context - The canvas context.
  */
 export const clearCanvas = (context: CanvasRenderingContext2D) =>
   context.clearRect(0, 0, context.canvas.width, context.canvas.height);
@@ -78,7 +91,7 @@ export const clearCanvas = (context: CanvasRenderingContext2D) =>
 /**
  * Draws a circle to a canvas.
  * @method
- * @param {object} context - The canvas context.
+ * @param {CanvasRenderingContext2D} context - The canvas context.
  * @param {number} x - X coordinate to position the circle.
  * @param {number} y - Y coordinate to position the circle.
  * @param {number} radius - The radius of the circle.
@@ -102,8 +115,8 @@ export const drawCircle = (
 /**
  * Draws an image to a canvas.
  * @method
- * @param {object} context - The canvas context.
- * @param {object} image - Reference to an HTML image element.
+ * @param {CanvasRenderingContext2D} context - The canvas context.
+ * @param {HTMLImageElement} image - Reference to an HTML image element.
  * @param {number} x - X coordinate to position the image.
  * @param {number} y - Y coordinate to position the image.
  * @param {object} options - Optional context properties to apply when drawing a image.
@@ -126,7 +139,7 @@ export const drawImage = (
 /**
  * Draws a line to a canvas.
  * @method
- * @param {object} context - The canvas context.
+ * @param {CanvasRenderingContext2D} context - The canvas context.
  * @param {number} x - X coordinate to position the line.
  * @param {number} y - Y coordinate to position the line.
  * @param {number} x1 - X coordinate where line starts.
@@ -157,7 +170,7 @@ export const drawLine = (
 /**
  * Draws a path from an SVG path tag to a canvas.
  * @method
- * @param {object} context - The canvas context.
+ * @param {CanvasRenderingContext2D} context - The canvas context.
  * @param {string} d - Path definition from an SVG path tag.
  * @param {object} options - Optional context properties to apply when drawing a image.
  */
@@ -175,7 +188,7 @@ export const drawPath = (
 /**
  * Draws a polygon to a canvas.
  * @method
- * @param {object} context - The canvas context.
+ * @param {CanvasRenderingContext2D} context - The canvas context.
  * @param {number} x - X coordinate to position the polygon.
  * @param {number} y - Y coordinate to position the polygon.
  * @param {number[][]} points - Multi-dimensional array of points used to render a polygon. Point arrays with 2 values is rendered as a line, 5 values is rendered as an arc and 6 values is rendered as a bezier curve.
@@ -229,7 +242,7 @@ export const drawPolygon = (
 /**
  * Draws a polygon from an SVG polyline tag to a canvas.
  * @method
- * @param {object} context - The canvas context.
+ * @param {CanvasRenderingContext2D} context - The canvas context.
  * @param {string} points - Points from an SVG polyline tag.
  * @param {boolean} closed - Boolean to determine if the polyline should be self closing or not.
  * @param {object} options - Optional context properties to apply when drawing a image.
@@ -257,7 +270,7 @@ export const drawPolyline = (
 /**
  * Draws a rectangle to a canvas.
  * @method
- * @param {object} context - The canvas context.
+ * @param {CanvasRenderingContext2D} context - The canvas context.
  * @param {number} x - X coordinate to position the rectangle.
  * @param {number} y - Y coordinate to position the rectangle.
  * @param {number} width - The width of the rectangle.
@@ -290,7 +303,7 @@ export const drawRect = (
 /**
  * Draws text to a canvas.
  * @method
- * @param {object} context - The canvas context.
+ * @param {CanvasRenderingContext2D} context - The canvas context.
  * @param {number} x - X coordinate to position the text.
  * @param {number} y - Y coordinate to position the text.
  * @param {string} text - Value of the text object.
