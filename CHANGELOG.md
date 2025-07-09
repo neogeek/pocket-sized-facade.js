@@ -1,6 +1,6 @@
 # Changelog
 
-## [HEAD](https://github.com/neogeek/pocket-sized-facade.js/tree/HEAD) - (2025-06-25)
+## [HEAD](https://github.com/neogeek/pocket-sized-facade.js/tree/HEAD) - (2025-07-08)
 
 [Full Changelog](https://github.com/neogeek/pocket-sized-facade.js/compare/v3.0.0...HEAD)
 
